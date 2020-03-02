@@ -1,3 +1,4 @@
+# 装饰器使用
 def new_tips(argv):
     def tips(func):
         def nei(a, b):

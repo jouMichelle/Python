@@ -1,3 +1,3 @@
-import  mymod
+import mymod
 
 mymod.print_me()

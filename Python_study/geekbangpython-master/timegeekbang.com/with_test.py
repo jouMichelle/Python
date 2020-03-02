@@ -1,3 +1,4 @@
+# 自定义 with() 函数使用
 class Testwith(object):
     '''
     with 包含了 __enter__ 和 __exit__ 方法

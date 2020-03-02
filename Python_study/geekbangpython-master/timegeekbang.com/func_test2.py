@@ -1,3 +1,4 @@
+# Python函数闭包体验
 def counter(FIRST=0):
     cnt = [FIRST]
 
