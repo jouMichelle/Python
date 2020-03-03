@@ -20,7 +20,6 @@
 
 import re
 
-
 p = re.compile(r'(\d+)-(\d+)-(\d+)')
 # print (p.match('aa2018-05-10bb').group(2) )
 # print (p.match('2018-05-10').groups() )
@@ -36,6 +35,10 @@ p = re.compile(r'(\d+)-(\d+)-(\d+)')
 # print(p3)
 # findall()
 
-import  random
-print( random.randint(1,5))
-print( random.choice(['aa','bb','cc']))
+#  Python随机数字标准库
+import random
+
+# 在范围值生成一个随机数
+print(random.randint(1, 5))
+# 列表中随机抽取随机字符串
+print(random.choice(['aa', 'bb', 'cc']))

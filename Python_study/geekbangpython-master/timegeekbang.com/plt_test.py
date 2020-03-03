@@ -1,15 +1,18 @@
+#  matplotlib 绘图库
+#  matplotlib 安装 ： pip install matplotlib
 import matplotlib.pyplot as plt
-#
-# #绘制简单的曲线
-# plt.plot([1, 3, 5], [4, 8, 10])
-# plt.show()
+
+#绘制简单的曲线
+plt.plot([1, 3, 5], [4, 8, 10])
+plt.show()
+
 
 import numpy as np
+x= np.linspace(-np.pi,np.pi,100) # x轴的定义域为 -3.14~3.14，中间间隔100个元素
+plt.plot(x,np.sin(x))
+#显示所画的图
+plt.show()
 
-# x= np.linspace(-np.pi,np.pi,100) # x轴的定义域为 -3.14~3.14，中间间隔100个元素
-# plt.plot(x,np.sin(x))
-# #显示所画的图
-# plt.show()
 
 # x = np.linspace(-np.pi * 2, np.pi * 2, 100)  # 定义域为： -2pi 到 2pi
 # plt.figure(1, dpi=50)  # 创建图表1
