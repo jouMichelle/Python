@@ -1,3 +1,4 @@
+# 代替正则进行匹配HTML语言解析
 html_doc = """
 <html><head><title>The Dormouse's story</title></head>
 <body>
@@ -18,12 +19,11 @@ soup = BeautifulSoup(html_doc, 'lxml')
 
 print(soup.prettify())
 
-#
-# # 找到title标签
-# print(soup.title)
-#
-# # title 标签里的内容
-# print(soup.title.string)
+
+ # 找到title标签
+print(soup.title)
+ # title 标签里的内容
+print(soup.title.string)
 
 
 # # 找到p标签

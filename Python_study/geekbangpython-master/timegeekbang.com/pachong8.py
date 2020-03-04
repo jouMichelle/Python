@@ -38,6 +38,7 @@ def craw3(url):
     for pic_href in soup.find_all('div', class_='news_type_video'):
         for pic in pic_href.find_all('img'):
             imgurl = pic.get('src')
+            print(imgurl)
             dir = os.path.abspath('.')
             filename = os.path.basename(imgurl)
             imgpath = os.path.join(dir, filename)
@@ -45,12 +46,12 @@ def craw3(url):
             download_jpg(imgurl, imgpath)
 
 
-# craw3(url)
+craw3(url)
 #
 # 翻页
 j = 0
-for i in range(12, 37, 12):
-    url = 'http://www.infoq.com/cn/presentations' + str(i)
-    j += 1
-    print('第 %d 页' % j)
-    craw3(url)
+# for i in range(12, 37, 12):
+#     url = 'http://www.infoq.com/cn/presentations' + str(i)
+#     j += 1
+#     print('第 %d 页' % j)
+#     craw3(url)

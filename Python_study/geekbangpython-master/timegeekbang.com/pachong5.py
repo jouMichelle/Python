@@ -1,3 +1,4 @@
+# 获取一个网站的图片,使用正则进行匹配
 import requests
 import re
 content = requests.get('http://www.cnu.cc/discoveryPage/hot-人像').text

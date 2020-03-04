@@ -1,3 +1,4 @@
+
 from bs4 import BeautifulSoup
 import requests
 
@@ -18,19 +19,17 @@ url = 'http://www.infoq.com/cn/news'
 # 取得新闻标题
 def craw2(url):
     response = requests.get(url, headers=headers)
-
     soup = BeautifulSoup(response.text, 'lxml')
-
     for title_href in soup.find_all('div', class_='news_type_block'):
         print([title.get('title')
               for title in title_href.find_all('a') if title.get('title')])
 
-# craw2(url)
+craw2(url)
 
 
 
 # 翻页
-for i in range(15, 46, 15):
-    url = 'http://www.infoq.com/cn/news/' + str(i)
-    # print(url)
-    craw2(url)
+# for i in range(15, 46, 15):
+#     url = 'http://www.infoq.com/cn/news/' + str(i)
+#     print(url)
+#     craw2(url)
